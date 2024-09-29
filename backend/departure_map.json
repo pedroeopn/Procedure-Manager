@@ -1,0 +1,60 @@
+{
+    "SBGR": {
+        "10L": [
+            {"departure": "AMVUL 4A", "transitions": ["AMVUL", "VUMEV", "NUXEL", "UKBEV"]},
+            {"departure": "EDLUT 1A", "transitions": ["EDLUT", "VUMEV", "UKBEV"]},
+            {"departure": "EKOPO 1A", "transitions": ["EKOPO", "NIBRU", "UREMI"]},
+            {"departure": "UKBEV 2D", "transitions": ["GERTU", "UKBEV"]},
+            {"departure": "ZORZA 2A", "transitions": ["ZORZA", "MADNI", "UBSOD", "SOVSI", "ASETA", "EGEVA", "GERTU"]}
+        ],
+        "10R": [
+            {"departure": "CGO 2A", "transitions": ["CGO", "MADNI", "UBSOD", "NIBGA", "SOVSI", "ASETA", "EGEVA", "GERTU"]},
+            {"departure": "NIBRU 2A", "transitions": ["NIBRU"]},
+            {"departure": "REORI 2A", "transitions": ["REORI", "VUMEV", "NUXEL", "UKBEV"]},
+            {"departure": "UREMI 2A", "transitions": ["UREMI"]}
+        ],
+        "28L": [
+            {"departure": "AKRER 1A", "transitions": ["AKRER", "MADNI", "UBSOD", "SOVSI", "ASETA", "EGEVA"]},
+            {"departure": "CGO 2B", "transitions": ["CGO", "MADNI", "UBSOD", "NIBGA", "SOVSI", "ASETA", "EGEVA", "GERTU"]},
+            {"departure": "EVNEB 2A", "transitions": ["EVNEB", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "GERTU 1A", "transitions": ["GERTU"]},
+            {"departure": "OMNI", "transitions": ["OMNI"]}
+        ],
+        "28R": [
+            {"departure": "AKRER 1A", "transitions": ["AKRER", "MADNI", "UBSOD", "SOVSI", "ASETA", "EGEVA"]},
+            {"departure": "CGO 2B", "transitions": ["CGO", "MADNI", "UBSOD", "NIBGA", "SOVSI", "ASETA", "EGEVA", "GERTU"]},
+            {"departure": "EVNEB 2A", "transitions": ["EVNEB", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "GERTU 1A", "transitions": ["GERTU"]},
+            {"departure": "ISNAP 1A", "transitions": ["ISNAP", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "UKBEV 3E", "transitions": ["UKBEV"]},
+            {"departure": "ZORZA 4B", "transitions": ["ZORZA", "MADNI", "UBSOD", "SOVSI", "GERTU", "ASETA", "EGEVA"]},
+            {"departure": "OMNI", "transitions": ["OMNI"]}
+        ]
+    },
+    "SBSP": {
+        "17R": [
+            {"departure": "BAIAN 2A", "transitions": ["BAIAN", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "LESSA 1A", "transitions": ["LESSA", "ASETA", "EGEVA"]},
+            {"departure": "UGTIX 2A", "transitions": ["UGTIX", "GERTU", "EGEVA", "ASETA"]},
+            {"departure": "UTKOM 1A", "transitions": ["UTKOM", "SOVSI", "NIBGA", "UBSOD", "MADNI"]}
+        ],
+        "17L": [
+            {"departure": "BAIAN 2A", "transitions": ["BAIAN", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "LESSA 1A", "transitions": ["LESSA", "ASETA", "EGEVA"]},
+            {"departure": "UGTIX 2A", "transitions": ["UGTIX", "GERTU", "EGEVA", "ASETA"]},
+            {"departure": "UTKOM 1A", "transitions": ["UTKOM", "SOVSI", "NIBGA", "UBSOD", "MADNI"]}
+        ],
+        "35L": [
+            {"departure": "BAIAN 2B", "transitions": ["BAIAN", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "LESSA 1B", "transitions": ["LESSA", "ASETA", "EGEVA"]},
+            {"departure": "SEDLO 1A", "transitions": ["SEDLO", "NIBGA", "UBSOD", "MADNI"]},
+            {"departure": "UGTIX 1B", "transitions": ["UGTIX", "GERTU", "EGEVA", "ASETA"]}
+        ],
+        "35R": [
+            {"departure": "BAIAN 2B", "transitions": ["BAIAN", "NIBRU", "UREMI", "VUMEV", "NUXEL"]},
+            {"departure": "LESSA 1B", "transitions": ["LESSA", "ASETA", "EGEVA"]},
+            {"departure": "SEDLO 1A", "transitions": ["SEDLO", "NIBGA", "UBSOD", "MADNI"]},
+            {"departure": "UGTIX 1B", "transitions": ["UGTIX", "GERTU", "EGEVA", "ASETA"]}
+        ]
+    }
+}

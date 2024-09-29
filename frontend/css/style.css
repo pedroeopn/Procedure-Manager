@@ -1,0 +1,199 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #565656; /* Cor principal */
+    color: #ffffff; /* Textos brancos */
+    font-family: Arial, sans-serif; /* Fonte Arial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#metarButton {
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#metarContainer {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.container {
+    background-color: #404040; /* Fundo do container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #ffffff; /* Texto do título branco */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #565656; /* Borda principal */
+    margin-bottom: 10px;
+    background-color: #696969; /* Fundo dos campos */
+    color: #ffffff; /* Texto branco */
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.input-box::placeholder {
+    color: #cccccc; /* Placeholder mais claro */
+}
+
+.input-box:focus {
+    border-color: #ffffff; /* Borda branca ao focar */
+    outline: none;
+    background-color: #7a7a7a; /* Fundo levemente mais claro ao focar */
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #696969; /* Fundo das sugestões */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 100%;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    color: #ffffff; /* Texto branco */
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.suggestion-item:hover {
+    background-color: #565656; /* Cor principal ao passar o mouse */
+    color: #ffffff; /* Mantém o texto branco */
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre as caixas de saída */
+}
+
+.output-box {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #696969; /* Fundo das caixas de saída */
+    color: #ffffff; /* Texto branco */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    position: relative; /* Necessário para posicionar o rótulo */
+    transition: background-color 0.3s ease;
+    border: 2px solid; /* Para que a cor da borda possa ser alterada dinamicamente */
+}
+
+.output-box.error {
+    background-color: #a83232; /* Fundo vermelho para erros */
+    border-color: red;
+}
+
+.type-label {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: inherit;
+    font-weight: bold;
+}
+
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Seção do ATIS */
+.atis-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atis-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.atis-button:hover {
+    background-color: #0056b3;
+}
+
+.atis-output {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #696969;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    white-space: pre-wrap; /* Mantém formatação de múltiplas linhas */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .input-box {
+        font-size: 1rem;
+    }
+
+    .suggestion-item {
+        font-size: 1rem;
+    }
+
+    .output-box, .atis-output {
+        font-size: 1rem;
+    }
+}
